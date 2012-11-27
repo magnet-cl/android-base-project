@@ -1,15 +1,21 @@
 package cl.magnet.android;
 
+import roboguice.activity.RoboActivity;
+import roboguice.inject.InjectView;
 import android.os.Bundle;
-import android.app.Activity;
 import android.view.Menu;
+import android.widget.TextView;
 
-public class SplashActivity extends Activity {
+public class SplashActivity extends RoboActivity {
+    @InjectView(R.id.text_hello_world)
+    TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
+        textView.setText("Hola Mundo!");
     }
 
     @Override
@@ -18,5 +24,5 @@ public class SplashActivity extends Activity {
         getMenuInflater().inflate(R.menu.activity_splash, menu);
         return true;
     }
-    
+
 }
