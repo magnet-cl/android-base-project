@@ -7,15 +7,14 @@ import android.view.Menu;
 import android.widget.TextView;
 
 public class SplashActivity extends RoboActivity {
-    @InjectView(R.id.text_hello_world)
-    TextView textView;
+    @InjectView(R.id.text_hello_world) TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        textView.setText("Hola Mundo!");
+        textView.setText("Hola Magnet!");
     }
 
     @Override
