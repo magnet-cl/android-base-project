@@ -1,0 +1,6 @@
+[submodule "libraries/ActionBarSherlock"]
+	path = libraries/ActionBarSherlock
+	url = git@github.com:JakeWharton/ActionBarSherlock
+[submodule "libraries/FacebookAndroidSdk"]
+	path = libraries/FacebookAndroidSdk
+	url = git@github.com:facebook/facebook-android-sdk
